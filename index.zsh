@@ -9,6 +9,8 @@ zplug "lib/history", from:oh-my-zsh # support for history command
 zplug "lib/completion", from:oh-my-zsh # support for highlighting TAB completion
 zplug "zsh-users/zsh-autosuggestions" # realtime autocomplete for zsh based on command history
 
+zplug "Tarrasch/zsh-autoenv" # automatically setup env for projects
+
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3 # Syntax highlighting for commands, load last
 zplug 'dracula/zsh', as:theme # Theme!
 

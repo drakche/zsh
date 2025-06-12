@@ -6,7 +6,7 @@ fi
 source ~/.zplug/init.zsh
 
 zplug "lib/history", from:oh-my-zsh # support for history command
-zplug "lib/completion", from:oh-my-zsh # support for highlighting TAB completion
+# zplug "lib/completion", from:oh-my-zsh # support for highlighting TAB completion
 zplug "zsh-users/zsh-autosuggestions" # realtime autocomplete for zsh based on command history
 
 zplug "Tarrasch/zsh-autoenv" # automatically setup env for projects

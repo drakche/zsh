@@ -12,7 +12,6 @@ zplug "zsh-users/zsh-autosuggestions" # realtime autocomplete for zsh based on c
 zplug "Tarrasch/zsh-autoenv" # automatically setup env for projects
 
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3 # Syntax highlighting for commands, load last
-zplug 'dracula/zsh', as:theme # Theme!
 
 # Actually install plugins, prompt user input
 if ! zplug check --verbose; then
@@ -21,21 +20,5 @@ if ! zplug check --verbose; then
         echo; zplug install
     fi
 fi
-
-cat << "EOF"
- _   _  ____  _     _ 
-| | | || ___/| |   | |     /|
-| |_| || |_  | |   | |  |\ \\ /|
-|  _  ||  _| | |   | | |\//|\//
-| | | || |__ | |_  | |_ \// ///
-|_| |_||____\|____\|____\\__|/             _
- _____          _  __  _     ____  __   _ _|_
-| __  \  /\    | |/ / | |   | ___/|  \ | /_|_\
-| |_| | //\\   | | /  | |   | |_  |   \| || |
-|  __/ / __ \  |   \  | |   |  _| | |\ | || |
-| |   / /  \ \ | |\ \ | |_  | |__ | | \  || |
-|_|  /_/    \_\|_| \_\|____\|____\|_|  \_|| |
-                                          \_/
-EOF
 
 zplug load

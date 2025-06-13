@@ -5,14 +5,11 @@ fi
 
 source ~/.zplug/init.zsh
 
-export ZSH_AUTOSUGGEST_STRATEGY=(completion history)
-export CASE_SENSITIVE=true
 
 zplug "lib/history", from:oh-my-zsh # support for history command
 zplug "lib/completion", from:oh-my-zsh # support for completion
 zplug "zsh-users/zsh-autosuggestions" # realtime autocomplete for zsh based on command history
 zplug "Tarrasch/zsh-autoenv" # automatically setup env for projects
-
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3 # Syntax highlighting for commands, load last
 
 
@@ -24,4 +21,8 @@ if ! zplug check --verbose; then
     fi
 fi
 
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+export CASE_SENSITIVE=true
+
+bindkey "^[[Z" autosuggest-accept
 zplug load

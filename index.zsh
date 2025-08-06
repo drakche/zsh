@@ -5,13 +5,11 @@ fi
 
 source ~/.zplug/init.zsh
 
-
 zplug "lib/history", from:oh-my-zsh # support for history command
 zplug "lib/completion", from:oh-my-zsh # support for completion
 zplug "zsh-users/zsh-autosuggestions" # realtime autocomplete for zsh based on command history
 zplug "Tarrasch/zsh-autoenv" # automatically setup env for projects
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3 # Syntax highlighting for commands, load last
-
 
 # Actually install plugins, prompt user input
 if ! zplug check --verbose; then
@@ -32,5 +30,7 @@ alias ssh_to_dev="ssh root@10.70.1.2"
 alias ssh_to_prod="ssh root@10.70.0.3"
 alias nano=micro
 alias edit=micro
+export EDITOR=micro
+export GIT_EDITOR=micro
 
 autoload -Uz compinit && compinit

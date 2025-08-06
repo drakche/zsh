@@ -28,9 +28,9 @@ zplug load
 # aliases
 alias ssh_to_dev="ssh root@10.70.1.2"
 alias ssh_to_prod="ssh root@10.70.0.3"
-alias nano=micro
+
 alias edit=micro
-export EDITOR=micro
-export GIT_EDITOR=micro
+export VISUAL=micro
+export EDITOR="$VISUAL"
 
 autoload -Uz compinit && compinit

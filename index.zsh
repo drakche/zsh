@@ -26,3 +26,11 @@ export CASE_SENSITIVE=true
 
 bindkey "^[[Z" autosuggest-accept
 zplug load
+
+# aliases
+alias ssh_to_dev="ssh root@10.70.1.2"
+alias ssh_to_prod="ssh root@10.70.0.3"
+alias nano=micro
+alias edit=micro
+
+autoload -Uz compinit && compinit
